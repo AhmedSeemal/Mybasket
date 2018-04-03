@@ -13,6 +13,10 @@
     {% else %}
         <link rel="stylesheet" type="text/css" href="{% static "oscar/css/styles.css" %}" />
         <link rel="stylesheet" type="text/css" href="{% static "oscar/css/style.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "oscar/css/slick.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "oscar/css/nouislider.min.css" %}" />
+
+        <link rel="stylesheet" type="text/css" href="{% static "oscar/css/slick-theme.css" %}" />
         <link rel="stylesheet" type="text/css" href="{% static "oscar/css/font-awesome.min.css" %}" />
     {% endif %}
     <link rel="stylesheet" href="{% static "oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css" %}" />
@@ -80,8 +84,31 @@
 {# Local scripts #}
 {% block scripts %}
     {{ block.super }}
-    <!-- Twitter Bootstrap -->
-    <script type="text/javascript" src="{% static "oscar/js/bootstrap3/bootstrap.min.js" %}"></script>
+	<!--<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/main.js"></script> -->
+    <!-- Twitter Bootstrap -->	
+	<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{% static "oscar/js/jquery.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/jquery.zoom.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "oscar/js/bootstrap3/bootstrap.min.js" %}"></script> 
+	<script type="text/javascript" src="{% static "oscar/js/nouislider.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/bootstrap.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/main.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/nouislider.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/slick.min.js" %}"></script>-->
+	
+
+	<script type="text/javascript" src="{% static "oscar/js/jquery.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/bootstrap.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/slick.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/nouislider.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "oscar/js/jquery.zoom.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "oscar/js/main.js" %}"></script>
+	
     <!-- Oscar -->
     <script src="{% static "oscar/js/oscar/ui.js" %}" type="text/javascript" charset="utf-8"></script>
 
